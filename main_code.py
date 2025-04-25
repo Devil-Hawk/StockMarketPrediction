@@ -343,8 +343,7 @@ class StockPredictor:
         return np.array(X), np.array(y)
     
     def build_hybrid_model(self):
-        """Build an extremely computationally intensive neural network model optimized for GPU"""
-        print("Building ultra-heavy neural network model for GPU...")
+        print("Training neural network model for GPU...")
         
         # Force model to be built on GPU
         with tf.device('/GPU:0'):
